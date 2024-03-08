@@ -13,7 +13,7 @@ const main = async () => {
         const message = req.body.message
         const mediaUrl = req.body.mediaUrl
         await bot.sendMessage(phone, message, { media: mediaUrl })
-        res.end("esto es del server de cuidador digital")
+        res.end("Esto es del server de cuidador digital")
     }))
 
     await createBot({
